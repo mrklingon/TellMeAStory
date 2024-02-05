@@ -1,0 +1,2 @@
+# TellMeAStory
+generate scifi stories.
