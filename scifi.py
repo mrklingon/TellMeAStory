@@ -2,8 +2,16 @@ import time
 import random
 import board
 import random
-from morse import *
+import touchio
+import neopixel
+
+
 from prt import *
+# set up touch for input
+touch1 = touchio.TouchIn(board.TOUCH1)
+touch2 = touchio.TouchIn(board.TOUCH2)
+#set up pixels
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 4, auto_write=True)
 
 REPL = True
 
@@ -82,3 +90,4 @@ while not Done:
 
     if val ==3:
         Done = True
+
