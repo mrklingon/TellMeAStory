@@ -1,7 +1,5 @@
 import time
-import random
 import board
-import random
 import neopixel
 import random
 import touchio
@@ -66,11 +64,8 @@ while not Done:
 
     if val == 2:
         compthink()
-        prt(wisdom("ships.sf"),REPL)
-        prt(random.choice(travel),REPL)
-        prt(place,REPL)
-        prt(random.choice(purpose),REPL)
-        prt(random.choice(problem),REPL)
+        prt(wisdom("ships.sf")+" "+random.choice(travel)+" " +place,REPL)
+        prt(random.choice(purpose)+ " "+random.choice(problem),REPL)
         prt(random.choice(solution),REPL)
         prt(random.choice(twist).format(place=wisdom("planets.sf"), alien = wisdom("aliens.sf")),REPL)
 
