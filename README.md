@@ -8,6 +8,7 @@ generate scifi stories.
 * ships.sf
 * planets.sf
 * aliens.sf
+* coda.sf 
 
 ## **NOTE**
 Planets, Aliens, and Ship names were generated on fantasynamegenerators.com - you can edit the lists with your own choices. And you can rewrite the story elements to your own liking!
