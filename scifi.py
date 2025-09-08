@@ -64,11 +64,12 @@ while not Done:
 
     if val == 2:
         compthink()
-        prt(wisdom("ships.sf")+" "+random.choice(travel)+" " +place,REPL)
+        ship = wisdom("ships.sf")
+        prt(ship+" "+random.choice(travel)+" " +place,REPL)
         prt(random.choice(purpose)+ " "+random.choice(problem),REPL)
         prt(random.choice(solution),REPL)
         prt(random.choice(twist).format(place=wisdom("planets.sf"), alien = wisdom("aliens.sf")),REPL)
-
+        prt(wisdom("coda.sf").format(SHIP=ship,place=wisdom("planets.sf"),alien=wisdom("aliens.sf")),REPL)
     if val ==3:
         Done = True
     
